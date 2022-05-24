@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <dir class="contenedor">
+        <header>
+            <h1 id="title">Formulario magiculoso</h1>
+            <p>Muchas gracias por tomar tu tiempo para rellenar este formulario</p>
+        </header>
+        <main>
+            <form action="" id="survey-form">
+
+                <label for="name" id="name-label"> Nombre
+                    <input class="datos-basicos" type="text" name="nombre" id="name" placeholder="Alex Poveda">
+                </label>
+                <label for="email" id="email-label"> Correo electrónico
+                    <input class="datos-basicos" type="email" name="enail" id="email" placeholder="correo@gmail.com">
+                </label>
+                <label for="number" id="number-label"> Número
+                    <input class="datos-basicos" type="number" name="numero" id="number" min="0" max="10" placeholder="5">
+                </label>
+
+                <p>Cual de estos cinco colores te gusta más</p>
+                    <select name="color" id="dropdown">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="verde">Verde</option>
+                        <option value="negro">Negro</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="amarillo">Amarillo</option>
+                    </select>
+
+                    <p>Que rango de edad tienes</p>
+                        <label for="edad1">
+                            <input class="radio-buttons" type="radio" name="edad" id="edad1" value="edad18-30"> 18 - 30 años
+                        </label>
+                        <label for="edad2">
+                            <input class="radio-buttons" type="radio" name="edad" id="edad2" value="edad31-60"> 31 - 60 años
+                        </label>
+                        <label for="edad3">
+                            <input class="radio-buttons" type="radio" name="edad" id="edad3" value="edad61-100"> 61 - 100 años
+                        </label>
+                        <label for="edad4">
+                            <input class="radio-buttons" type="radio" name="edad" id="edad4" value="edadMas100"> +100 años
+                        </label>
+
+                    <p>Que generos de los videojuegos te gustan</p>
+                        <label for="videojuego1">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego1" value="rpg"> RPG
+                        </label>
+                        <label for="videojuego2">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego2" value="accion"> Acción
+                        </label>
+                        <label for="videojuego3">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego3" value="aventura"> Aventura
+                        </label>
+                        <label for="videojuego4">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego4" value="fantasia"> Fantasía
+                        </label>
+                        <label for="videojuego5">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego5" value="shooter"> Shooter
+                        </label>
+                        <label for="videojuego6">
+                            <input class="checkbox-buttons" type="checkbox" name="videojuego" id="videojuego6" value="deportes"> Deportes
+                        </label>
+
+                    <p>Indicanos porque te gustan los generos que marcaste en la pregunta anterior</p>
+                        <textarea name="informacion-extra" id="area-texto" placeholder="Escribe lo que piensas"></textarea>
+
+                    <button type="submit" id="submit">Enviar</button>
+
+            </form>
+        </main>
+    </dir>   
+</body>
+</html>
