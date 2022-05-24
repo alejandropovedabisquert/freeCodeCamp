@@ -1,4 +1,17 @@
 * { margin: 0; padding: 0; font-family: arial; }
+body::after{
+    background-image: linear-gradient( 115deg, rgba(71, 71, 71, 0.8), rgba(67, 67, 67, 0.7) ), url("https://i.pinimg.com/originals/2c/5c/31/2c5c3123f86659276400b8ed8ffc2a47.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%; 
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
 .contenedor{
     width: 700px;
@@ -11,11 +24,25 @@ header{
     text-align: center;
     margin-bottom: 2em;
 }
+.seccion-formulario{
+    margin-bottom: 1.5em;
+}
+#survey-form{
+    margin: 0 2em;
+}
 
 main > #survey-form label{
     display: flex;
 }
-main > #survey-form .datos-basicos{
+
+main > #survey-form{
     display: block;
-    width: 100%;
+}
+
+#area-texto, #submit, .datos-basicos, #dropdown{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px lightgrey;
+    padding: 0.7rem 0.7rem;
+    
 }
