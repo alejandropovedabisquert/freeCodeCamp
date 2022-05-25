@@ -9,29 +9,29 @@
     <dir class="contenedor">
         <header>
             <h1 id="title">Formulario magiculoso</h1>
-            <p>Muchas gracias por tomar tu tiempo para rellenar este formulario</p>
+            <p id="description">Muchas gracias por tomar tu tiempo para rellenar este formulario</p>
         </header>
         <main>
             <form action="" id="survey-form">
                 
                 <section class="seccion-formulario">
                     <label for="name" id="name-label">Nombre</label>
-                    <input class="datos-basicos" type="text" name="nombre" id="name" placeholder="Alex Poveda">
+                    <input class="datos-basicos" type="text" name="nombre" id="name" placeholder="Alex Poveda" required>
                 </section>
 
                 <section class="seccion-formulario">
                     <label for="email" id="email-label">Correo electrónico</label>
-                    <input class="datos-basicos" type="email" name="enail" id="email" placeholder="correo@gmail.com">
+                    <input class="datos-basicos" type="email" name="enail" id="email" placeholder="correo@gmail.com" required>
                 </section>
 
                 <section class="seccion-formulario">
                     <label for="number" id="number-label">Número</label>
-                    <input class="datos-basicos" type="number" name="numero" id="number" min="0" max="10" placeholder="5">
+                    <input class="datos-basicos" type="number" name="numero" id="number" min="0" max="10" placeholder="5" required>
                 </section>
 
                 <section class="seccion-formulario">
                     <p>Cual de estos cinco colores te gusta más</p>
-                    <select name="color" id="dropdown">
+                    <select name="color" id="dropdown" required>
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="rojo">Rojo</option>
                         <option value="verde">Verde</option>

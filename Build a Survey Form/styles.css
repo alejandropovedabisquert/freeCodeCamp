@@ -22,7 +22,8 @@ h1, p, label{
 }
 
 main{
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: auto;
     background-color: rgba(71, 71, 71, 0.8);
     margin: 0 auto;
