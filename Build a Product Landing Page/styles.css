@@ -137,6 +137,39 @@ main{
     #precio-concierto .card{
         margin: 0 auto 3em auto;
     }
+
+    #nav-bar > ul{
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px) {
+    #logo{
+        width: 100%;  
+    }
+    #header{
+        flex-flow: column;
+    }
+    #header-img {
+        margin: 0 auto;
+        display: block;
+    }
+    #nav-bar{
+        width: 100%;
+    }    
+    #nav-bar > ul{
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #nav-bar > ul > li{
+        line-height: 2em;
+    }
+    #suscripcion{
+        margin-top: 200px;
+    }
 }
   
 
