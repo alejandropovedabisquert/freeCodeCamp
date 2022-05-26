@@ -1,5 +1,9 @@
 * { margin: 0; padding: 0; font-family: arial; box-sizing: border-box;}
 
+body{
+    background-color: rgb(247, 247, 247);
+}
+
 #submit, #pago{
     font-weight: bolder;
 }
@@ -12,7 +16,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
+    background-color: lightgray;
     width: 100%;
 }
 
@@ -32,6 +36,10 @@
 }
 li{
     list-style: none;
+}
+#nav-bar > ul a{
+    text-decoration: none;
+    color:black;
 }
 main{
     max-width: 1000px;
@@ -59,6 +67,9 @@ main{
 }
 #suscripcion #form #email{
     margin-bottom: 0.5em;
+    border: none;
+    border-bottom: 2px solid;
+    padding: 0.375rem 0.375rem;
 }
 
 #suscripcion #form #submit{
@@ -69,6 +80,14 @@ main{
     border-radius: 5px;
     font-size:small
 }
+#suscripcion #form #submit:hover{
+    background-color: rgb(221, 163, 17);
+    transition: 300ms;
+}
+#suscripcion #form #submit:active{
+    background-color: darkgoldenrod;
+}
+
 
 #quien-es-sfdk, #cancion-popular, #precio-concierto{
     margin-bottom: 30px;
