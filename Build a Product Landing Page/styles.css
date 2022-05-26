@@ -44,3 +44,55 @@ main{
     height: 150px;
     margin-top: 50px;
 }
+#quien-es-sfdk, #cancion-popular, #precio-concierto{
+    margin-bottom: 30px;
+}
+
+#quien-es-sfdk p{
+    margin-top: 1em;
+}
+
+#cancion-popular #video{
+    display: block;
+    margin: 0 auto;
+}
+
+#precio-concierto .card{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 5px;
+
+}
+#precio-concierto .card .header-card{
+    background-color: bisque;
+    border-radius: 2px 2px 0 0;
+}
+
+#precio-concierto .card .header-card, #precio-concierto .card .body-card, #precio-concierto .card .footer-card{
+    padding: 1em 0 1em 0;
+}
+
+.footer-card #pago{
+    padding: 0.5em 3em 0.5em 3em;
+    background-color: green;
+    color: white;
+    border-style: hidden;
+    border-radius: 5px;
+    font-size:medium;
+}
+
+.footer-card #pago:hover{
+    background-color: rgb(88, 177, 0);
+    transition: 300ms;
+}
+
+.footer-card #pago:active{
+    background-color: green;
+}
+
+
+
