@@ -9,48 +9,119 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>Documentación</header>
+        <header><h1>Laravel Documentation</h1></header>
         <ul>
-            <li>Cosas</li>
-            <li>Cosas</li>
-            <li>Cosas</li>
-            <li>Cosas</li>
-            <li>Cosas</li>
-            <li>Cosas</li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#already-know">What you shoul already know</a></li>
+            <li><a href="#hello-world">Hello World</a></li>
+            <li><a href="#declaring-variables">Declaring variables</a></li>
+            <li><a href="#data-types">Data types</a></li>
+            <li><a href="#function-declarationgs">Function declarations</a></li>
         </ul>
     </nav>
     
     <main id="main-doc">
         <section class="main-section">
             <header>
-                Cosas
+                <h2>Introduction</h2>
             </header>
             <article>
-                <p>Mas cosas</p>
+                <p>Laravel is a web application framework with expressive, elegant syntax. A web framework provides a structure and starting point for creating your application, allowing you to focus on creating something amazing while we sweat the details.</p>
+                <p>Laravel strives to provide an amazing developer experience while providing powerful features such as thorough dependency injection, an expressive database abstraction layer, queues and scheduled jobs, unit and integration testing, and more.</p>
+                <p>Whether you are new to PHP web frameworks or have years of experience, Laravel is a framework that can grow with you. We'll help you take your first steps as a web developer or give you a boost as you take your expertise to the next level. We can't wait to see what you build.</p>
             </article>
         </section>
         <section class="main-section">
             <header>
-                Cosas
+                <h2>What you shoul already know</h2>
             </header>
             <article>
-                <p>Mas cosas</p>
+                <p>Laravel programmers must have proficient knowledge of fundamental web technologies. They must have a thorough understanding of CSS, HTML, and JavaScript to be able to build and deploy the applications.</p>
+                <p>Prepare a list of interview questions for Laravel developers, including these technologies. Here's a detailed summary of why the knowledge of these programming languages ​​is essential for not just Laravel programmers but all web developers.</p>
+                <ul>
+                    <li><p><b>HTML:</b> Hypertext Markup Language is the core of creating web applications. It uses tags to determine different types of elements and content. In simple words, because of HTML, one can differentiate elements such as the cover title, body text, and subheadings in a website. </p></li>
+                    <li><p><b>CSS (Cascading Style Sheets):</b> Its primary function is to set how the HTML elements of your website are displayed on the front end of the page. In the website development process, HTML provides tools for structuring content, but CSS cleans it up and styles it. </p></li>
+                    <li><p><b>JavaScript:</b> This logic-based programming language takes the website to the next level. One of its main features is to modify the website's content to give it a different behavior. All the CTAs or confirmation boxes that appear daily on the website are created in Javascript. </p></li>
+                    <li><p><b>PHP:</b> It is a general-purpose programming language that can be used to develop interactive and high-performance websites. PHP could be embedded into HTML, making adding functionality to web pages easier without having to reference external files for data. Also, Laravel is one of the PHP frameworks, making PHP a more necessary skill for Laravel programmers. </p></li>
+                </ul>
             </article>
         </section>
         <section class="main-section">
             <header>
-                Cosas
+                <h2>Hello World</h2>
             </header>
             <article>
-                <p>Mas cosas</p>
+                <p><b>The basic example</b></p>
+                <p>Open <code>routes/web.php</code> file and paste the following code in file:</p>
+                <pre>
+    <code>
+    Route::get('helloworld', function () {
+        return '&lt;h1&gt;Hello World&lt;/h1&gt;';
+    });</code>
+                </pre>
+                <p>Here 'helloworld' will act as page name you want to access and if you don't want to create blade file and still want to access the page directly then you can use laravel routing this way</p>
             </article>
         </section>
         <section class="main-section">
             <header>
-                Cosas
+                <h1>Declaring variables</h1>
             </header>
             <article>
-                <p>Mas cosas</p>
+                <p>You can declare a variable in three ways: </p>
+                <p>Inside the method. For example:</p>
+               <pre>
+    <code>
+    $variableName = "Variable";</code>
+                </pre>
+                <p>Or if it is a property that can only be accessed from the controller</p>
+                <pre>
+    <code>
+    protected $variableName;</code>
+                </pre>
+            </article>
+        </section>
+        <section class="main-section">
+            <header>
+                <h1>Data types</h1>
+            </header>
+            <article>
+                <p>Laraver have this data types</p>
+                <ul>
+                    <li>Six data types that are primitives:</li>
+                    <ul>
+                        <li>Boolean. true and false.</li>
+                        <li>Null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. </li>
+                        <li>Integer 65466</li>
+                        <li>Float 0.654</li>
+                        <li>String "ALEX"</li>
+                        <li>Array</li>
+                    </ul>
+                    <li>And Objects</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section">
+            <header>
+                <h1>Function declarations</h1>
+            </header>
+            <article>
+                <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by: </p>
+                <ul>
+                    <li>The name of the function.</li>
+                    <li>A list of arguments to the function, enclosed in parentheses and separated by commas. </li>
+                    <li>The PHP statements that define the function, enclosed in curly brackets, { }. </li>
+                </ul>
+                <p> For example, the following code defines a simple function named square: </p>
+                <pre>
+    <code>
+    function square(number) { return number * number; }</code>
+                </pre>
+                <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function. </p>
+                <pre>
+    <code>
+    return number * number;</code>
+                </pre>
+                <p> Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function. </p>
             </article>
         </section>
     </main>
