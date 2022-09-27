@@ -4,6 +4,7 @@
 #navbar{
   position: fixed;
   width: 100%;
+  z-index: 20;
 }
 
 #navbar .nav-list{
@@ -57,20 +58,63 @@
 	}
 }
 #projects{
-  background-color: #9C2C77;
+  background-color: #861717;
   color: white;
+  padding-bottom: 2em;
 }
 
 #projects h1{
   text-align: center;
+  padding: 1em 1em;
+  font-size: 2em;
 }
 #projects-list{
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
+  column-gap: 2em;
+  row-gap: 2em;
   justify-content: center;
 }
 .project-body{
   margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: .7em;
+  transition: transform .2s;
+}
+.project-body:hover{
+  transform: scale(1.05);
+}
+.project-body:hover .project-title::before{
+  content: "<";
+}
+.project-body:hover .project-title::after{
+  content: ">";
+}
+
+.project-header img{
+  border-radius: .7em .7em 0 0;
+}
+.project-title{
+  padding: 1em;
+  text-align: center;
+}
+
+#contact{
+  background-color: #4f243e;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding-top: 2em;
+}
+#rrss{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+#rrss a{
+  padding: 1em 2em;
+  color: white;
+
 }
